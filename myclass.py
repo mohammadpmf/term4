@@ -21,13 +21,10 @@ class MyGame():
         self.l_remained         = Label(self.frame, text="Amount Remained: ", bg=bg, fg=fg, font=font, bd=bd, padx=padx, pady=pady)
         self.e_name             = Entry(self.frame, bg=bg, fg=fg2, font=font, bd=bd, insertbackground=fg2)
         self.e_company          = Entry(self.frame, bg=bg, fg=fg2, font=font, bd=bd, insertbackground=fg2)
-        self.e_age              = ttk.Combobox(self.frame, values=['+3', '+7', '+10', '+12', '+15', '+17', '+25'], foreground=fg2, justify='center', font=font)
+        self.e_age              = ttk.Combobox(self.frame, values=['', '+3', '+7', '+10', '+12', '+15', '+17', '+25'], foreground=fg2, justify='center', font=font, state='readonly')
         self.e_price            = Entry(self.frame, bg=bg, fg=fg2, font=font, bd=bd, insertbackground=fg2)
         self.e_console_type     = Entry(self.frame, bg=bg, fg=fg2, font=font, bd=bd, insertbackground=fg2)
         self.e_remained         = Entry(self.frame, bg=bg, fg=fg2, font=font, bd=bd, insertbackground=fg2)
-
-        self.e_age.insert(0, '+7')
-        self.e_age.config(state='readonly')
 
         self.l_name             .grid(row=1,  column=1, sticky='news', padx=padx, pady=pady)
         self.l_company          .grid(row=3,  column=1, sticky='news', padx=padx, pady=pady)
