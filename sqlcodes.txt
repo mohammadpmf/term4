@@ -2,13 +2,13 @@ CREATE TABLE `term4`.`games` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `company` VARCHAR(40) NULL,
-  `age` TINYINT(3) UNSIGNED NULL,
+  `age` TINYINT UNSIGNED NULL,
   `price` INT UNSIGNED NOT NULL,
   `console` VARCHAR(30) NULL,
-  `stock` SMALLINT(5) UNSIGNED NOT NULL,
+  `stock` SMALLINT UNSIGNED NOT NULL,
   `image` VARCHAR(200) NULL,
-  PRIMARY KEY (`idgames`),
-  UNIQUE INDEX `idgames_UNIQUE` (`idgames` ASC) VISIBLE,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
   UNIQUE INDEX `name_UNIQUE` (`name` ASC) VISIBLE);
 
 سلام بچه ها. برای تمرین این جلسه، table ای برای بازی ها درست کنید که ویژگی های زیر رو داره.
@@ -19,5 +19,5 @@ CREATE TABLE `term4`.`games` (
 رده سنی اختیاری از جنس عدد
 قیمت اجباری از جنس عدد
 نوع کنسول اختیاری با حداکثر ۳۰ حرف
-تعداد باقیمانده اجباری از جنس عدد
+تعداد باقیمانده از بازی اجباری از جنس عدد
 آدرس عکس اختیاری با حداکثر طول 200 کاراکتر
