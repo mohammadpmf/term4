@@ -3,7 +3,7 @@ from tkinter import ttk, filedialog
 from PIL import Image, ImageTk
 
 class MyGame():
-    def __init__(self, root, bg=None, fg=None, fg2=None, text=None, font=None, bd=None, labelanchor=None, relief=None, abg=None, afg=None, padx=None, pady=None):
+    def __init__(self, root, bg='gray', fg=None, fg2='black', text=None, font=None, bd=None, labelanchor=None, relief=None, abg=None, afg=None, padx=0, pady=0):
         self.combo_style = ttk.Style()
         self.combo_style.theme_create('combostyle', parent='alt',settings = {'TCombobox':{'configure':{'selectbackground': bg,'fieldbackground': bg,'background': bg}}})
         self.combo_style.theme_use('combostyle')
